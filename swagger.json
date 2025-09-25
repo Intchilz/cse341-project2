@@ -2,7 +2,7 @@
   "swagger": "2.0",
   "info": {
     "title": "Patients API",
-    "description": "Project 2 API",
+    "description": "Project 2 API.",
     "version": "1.0.0"
   },
   "host": "cse341-project2-0enf.onrender.com",
