@@ -3,15 +3,17 @@ const router = express.Router();
 
 const contactsController = require('../controllers/patients');
 
+const { isAuthenticated } = require('../middleware/authenticate');
+
 router.get('/', contactsController.getAll);
 
 router.get('/:id', contactsController.getSingle);
 
-router.post('/', contactsController.createPatient);
+router.post('/', isAuthenticated, contactsController.createPatient);
 
-router.put('/:id', contactsController.updatePatient);
+router.put('/:id', isAuthenticated, contactsController.updatePatient);
 
-router.delete('/:id', contactsController.deletePatient);
+router.delete('/:id', isAuthenticated, contactsController.deletePatient);
 
 module.exports = router;
 
