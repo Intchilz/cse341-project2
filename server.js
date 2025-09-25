@@ -31,7 +31,7 @@ app.use('/', require('./routes'));
   passport.use(new GitHubStrategy({
     clientID: process.env.GITHUB_CLIENT_ID,
     clientSecret: process.env.GITHUB_CLIENT_SECRET,
-    callbackURL: process.env.GITHUB_CALLBACK_URL
+    callbackURL: process.env.CALLBACK_URL
   },  
   function(accessToken, refreshToken, profile, done) {
     // In a real application, you would save the user info to your database here.
