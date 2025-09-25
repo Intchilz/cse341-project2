@@ -5,7 +5,7 @@ const doc = {
         title: 'Patients API',
         description: 'Project2 API',
     },
-    host: 'localhost:3000',
+    host: 'cse341-project2-0enf.onrender.com',
     schemes: ['https', 'http'],
 };
 

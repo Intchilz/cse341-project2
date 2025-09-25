@@ -5,7 +5,7 @@
     "description": "Project2 API",
     "version": "1.0.0"
   },
-  "host": "https://cse341-project2-0enf.onrender.com",
+  "host": "cse341-project2-0enf.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
